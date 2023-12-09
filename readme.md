@@ -1,3 +1,6 @@
+External Website:   https://www.professorkeith.com
+GIThub site:  https://github.com/pkkeithLMC/CS601_final_project_keith.git
+
 1.  Design
 	a.  Reviewed lots of designs - very left brained
 	b.  Chose pieces and parts of sites that I found interesting

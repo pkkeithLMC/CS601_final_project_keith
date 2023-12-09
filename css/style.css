@@ -1,0 +1,559 @@
+.nav{
+    position:fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: var(--medBlue);
+    z-index: 9999;
+}
+
+.nav-display {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.nav-holder{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.nav-home{
+    text-transform: uppercase;
+    font-family: var(--arial);
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-home:hover{
+    opacity: .8;
+}
+
+.nav-button{
+    border:none;
+    font-size: 1.5rem;
+    background: none;
+    color: white;
+    cursor: pointer;
+    /*outline: none;
+    transition: var(--tran);*/
+}
+
+.nav-button:hover{
+    opacity: 0.8;
+}
+
+.nav-menu{
+    height: 0;
+    overflow: hidden;
+    transition: none;
+} 
+
+.nav-li{
+    text-align: center;
+    padding: 0.5 rem;
+    position: relative;
+}
+
+.nav-li::after{
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 5px;
+    width: 0;
+    height: 2px;
+    background: var(--cyan);
+    transition: var( --trans);
+}
+
+.nav-li:hover::after{
+    width: 100px;
+}
+
+.active-item .nav-a{
+    color: var(--cyan);
+}
+
+.nav-a{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    transition: var(--trans);
+}
+
+.nav-a:hover{
+    color: var(--cyan);
+}
+
+.showNav{
+    height: 250px;
+}
+
+.two-column{
+    padding: 5rem 0 2.5rem 0;
+}
+
+.two-column .column > div{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid var(--medBlue);
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+
+.two-column .left{
+    text-align: center;
+}
+
+.two-column .left h1{
+    font-size: 2rem;
+    font-family: var(--helv);
+    text-transform: uppercase;
+}
+
+.two-column .right{
+    align-items: center;    
+}
+
+.home-img{
+    position: relative;
+    width: 200px;
+    height: 260px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+.img-border{
+    background: var(--medBlue);
+    width: 210px;
+    height: 270px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(10px);
+}
+
+footer{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* #### SKILLS PAGE #### */
+.skills{
+    margin: 2rem;
+    padding: 2rem 0 2rem 0;
+}
+
+.skills h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.skills > .text{
+    margin: 1.5rem auto;
+    text-align: center;
+}
+
+.skills .row{
+    margin: auto;
+    max-width: 75%;
+}
+
+.skills .item{
+    padding: 0.5rem 0;
+    margin: 0.3rem 0;
+}
+.skills .item-text{
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.skills .item-text span:last-child{
+    position: absolute;
+}
+
+.progress{
+    margin: 0.8rem 0;
+    border-radius: 10px;
+    height: 16px;
+    width: 100%;
+    background-color: var(--royalBlue);
+    overflow: hidden;
+}
+.progress-bar{
+    background: var(--cyan);
+    height: 100%;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+
+/* #### Music PAGE #### */
+.music{
+    margin: 2rem;
+    padding: 2rem 0 2rem 0;
+}
+
+.music .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.music h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.music > .text{
+    margin: 1.5rem auto;
+    text-align: center;
+}
+
+.music > .small_text{
+    font-size: small;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+.music .item{
+    text-align: center;
+    padding: 1.5rem 0 2rem 0;
+    background: var(--royalBlue);
+    margin: 1.5rem 0;
+}
+
+.music .item h2{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    
+}
+
+.music .item img{
+    margin: auto;
+    height: 10%;
+    width: 10%;
+    border: 2px solid var(--medBlue);
+    border-radius: 50%;
+}
+
+.music img:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+#piano_text{
+    display: none;
+}
+
+.instrument {
+    max-width: 100%;
+}
+
+/* Resume Section */
+/* #### SKILLS PAGE #### */
+.resume{
+    margin: 2rem;
+    padding: 2rem 0 2rem 0;
+}
+
+.resume h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.resume > .text{
+    margin: 1.5rem auto;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact{
+    margin: 2rem;
+    padding: 2rem 0 2rem 0;
+}
+
+.contact h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contact > .text{
+    margin: 1.5rem auto;
+    text-align: center;
+}
+
+.contact #contact_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact table.contact-form{
+    margin: 10px;
+    border: 5px solid black;
+    padding: 10px;
+    background-color: var(--medBlue);
+    font-weight: bold;
+}
+
+.contact div.groupTitle{
+    margin-bottom: 3px;
+    font-size:smaller;
+    font-weight: bold;
+}
+
+.contact td.groupBorder{
+    border: 2px solid black;
+}
+
+.contact input:focus, textarea:focus, select:focus{
+    border: 3px solid var(--cyan);
+    background-color: beige;
+}
+
+.contact input.fieldError:focus {
+    border-color: red !important;
+}
+
+.contact input[type=submit], input[type=reset]{
+    background-color: var(--royalBlue);
+    color: rgb(231, 229, 229);
+    margin: 4px 2px;
+    padding: 5px 15px;
+}
+
+.contact .error-message{
+    font-weight:initial;
+}
+
+.contact .error-message.error{
+    color: red;
+    font-size: larger;
+    font-weight: bold;
+    border: 2px solid red;
+    background-color: lightgray;
+    text-align: center;
+}
+
+
+/* #### Response PAGE #### */
+.php_response{
+    margin: 2rem;
+    padding: 2rem 0 2rem 0;
+}
+
+.php_response h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.php_response > .text{
+    margin: 1.5rem auto;
+    text-align: center;
+}
+
+.php_response .response{
+    margin: auto;
+    border: 2px solid var(--medBlue);
+    padding: 2rem;
+}
+
+/* Farm Section */
+/* #### Music PAGE #### */
+.farm{
+    margin: 2rem;
+    padding: 2rem 0 2rem 0;
+}
+
+.farm .farmContent {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--medBlue);
+    flex-direction: column;
+  }
+
+.farm h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.farm > .text{
+    text-align: center;
+}
+
+.farm .farmText{
+   padding: 10px;
+   box-sizing: border-box;
+}
+
+.farm .rotateImage{
+    max-width: 256px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+/*  Teaching Section */
+.teaching{
+    margin: 2rem;
+    padding: 2rem 0 2rem 0;
+}
+
+.teaching .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.teaching h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.teaching h2{
+    font-size: medium;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.teaching p{
+    font-size: medium;
+    text-align: justify;
+}
+
+.teaching .Landmark .img-and-link{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.teaching img#Landmark{
+    border: 5px solid var(--medBlue);
+    border-radius: 10px;
+}
+
+.teaching .courses{
+    text-align: center;
+}
+
+.teaching #LandmarkVideo{
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    border: none;   
+}
+
+
+@media screen and (min-width: 992px) {
+    .nav-button{
+        display: none;
+    }
+
+    .nav-display {
+        width: 88vw;
+    }
+
+    .nav .nav-display{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+ 
+    .nav-ul{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav-menu{
+        height: 100%;
+        flex: 1 0 auto;
+    }
+
+    .nav-button{
+        flex: 0 0 100px;
+    }
+
+    .nav-li{
+        margin: 0 1rem;
+    }
+
+    .nav-a{
+        font-size: 1rem;
+    }
+
+    
+
+    .two-column .column > div{
+        border: none;
+        margin: 2em;
+        align-items: flex-start;
+    }
+
+    .two-column .column{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem; 
+    }
+
+    .skills .row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+    
+    .two-column .left{
+        text-align: left;
+    }
+
+    .home-img{
+        width: 100%;
+        height: 120%;
+        border-radius: unset;
+        background: transparent;
+        transform: translateY(14px);
+    }
+
+    
+
+    .instruments{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .music .row{
+        max-width: 50%;
+    }
+
+    .farm .farmContent {
+        flex-direction: unset;
+      }
+
+      .farm .farmText{
+        width: 66%;
+     }
+     
+     .farm .rotateImage{
+         width: 33%;
+     }
+
+}

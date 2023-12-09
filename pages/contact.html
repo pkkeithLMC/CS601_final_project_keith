@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous">
+    <link href="../css/globals.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <script src="../js/nav-script.js" defer></script>
+    <script src="../js/formValidate.js"></script>
+    <title>Kevin Keith</title>
+</head>
+
+<body>
+    <nav class="nav"></nav>
+    <main>
+        <section class="contact container">
+            <div class="title">
+                <h1>Contact Form</h1>
+            </div>
+            <section id="contact_form">
+
+                <form id="contactForm" action="https://www.professorkeith.com/term_project_keith/php/submitContactForm.php" method="POST" novalidate
+                    onsubmit="return validateForm();">
+                    <table class="contact-form">
+                        <tr>
+                            <td><label for="salutation">Salutation</label></td>
+                            <td><select name="salutation" id="salutation">
+                                    <option>&nbsp;</option>
+                                    <option>Mrs.</option>
+                                    <option>Mr.</option>
+                                    <option>Ms.</option>
+                                    <option>Dr.</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td><label for="firstName">First Name</label></td>
+                            <td><input type="text" id="firstName" name="firstName" size="40" title="Enter first name"
+                                    required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="lastName">Last Name</label></td>
+                            <td><input type="text" id="lastName" name="lastName" size="40" title="Enter last name"
+                                    required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">E-Mail Address</label></td>
+                            <td><input type="text" id="email" name="email" title="Must be of the form: x@y.z" size="40"
+                                    required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="phone">Phone Number</label></td>
+                            <td><input type="text" id="phone" name="phone" size=40
+                                    title="Must be of the form 111-222-3333" required></td>
+                        </tr>
+
+
+                        <tr>
+                            <td><label for="subject">Subject</label></td>
+                            <td><input type="text" id="subject" name="subject" size=40 required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="message">Message</label></td>
+                            <td><textarea name="message" id="message" rows="6" cols="38" required></textarea></td>
+                        </tr>
+
+
+                        <tr>
+                            <td colspan="2" class="groupBorder">
+                                <div class="groupTitle">Contact Preference</div>
+                                <input type="checkbox" name="by_mail" value="by_mail">e-Mail <br>
+                                <input type="checkbox" name="by_text" value="by_text">Text <br>
+                                <input type="checkbox" name="by_call" value="by_call">Call
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- <td><input type="submit" value="Submit" onclick="validateForm(event)"></td> -->
+                            <td><input type="submit" value="Submit"></td>
+                            <td><input type="reset" value="Reset" onclick="resetForm(event)"></td>
+                        </tr>
+
+                    </table>
+                    <div class="error-message" id="error-message"></div> <br>
+                </form>
+
+            </section>
+        </section>
+    </main>
+    <footer>&copy;2023. P. Kevin Keith</footer>
+
+
+</body>
+
+</html>

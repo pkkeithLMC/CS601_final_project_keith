@@ -1,0 +1,42 @@
+.section {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .section-header {
+    cursor: pointer;
+    user-select: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: large;
+  }
+  .section-content {
+    display: none;
+  }
+  .section.active .section-content {
+    display: block;
+    padding: 2rem 2rem 2rem 2rem;
+  }
+
+ .title{
+    color:beige ;
+    width: 75rem;
+  }
+.year{
+    width: 10rem;
+    text-align: right;
+  }
+
+.blank{
+    height: 2rem;
+    border-top: 2px solid var(--royalBlue);
+}
+
+.pres-title{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.dates{
+    width: 15rem;
+}

@@ -1,0 +1,47 @@
+{
+    "my_skills": [
+        {
+            "skills": {
+                "skill": "Java",
+                "proficency": 90
+            }
+        },
+        {
+            "skills": {
+                "skill": "Python",
+                "proficency": 75
+            }
+        },
+        {
+            "skills": {
+                "skill": "HTML5",
+                "proficency": 70
+            }
+        },
+        {
+            "skills": {
+                "skill": "JavaScript",
+                "proficency": 50
+            }
+        },
+        {
+            "skills": {
+                "skill": "C++",
+                "proficency": 80
+            }
+        },
+        {
+            "skills": {
+                "skill": "C#",
+                "proficency": 75
+            }
+        },
+         {
+            "skills": {
+                "skill": "C",
+                "proficency": 95
+            }
+        }
+ 
+    ]
+}

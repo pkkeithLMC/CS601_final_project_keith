@@ -1,0 +1,51 @@
+[
+    {
+        "title": "Associate Professor of Mathematics/Computer Science",
+        "location": "Landmark College",
+        "dates": "2018 to Present",
+        "description": "Teach all levels of mathematics classes including: Developmental, College Algebra, Linear Algebra, and Probability and Statistics.    Teach introductory CS courses to CS majors.  Also specialize in courses related to hardware, such as: Embedded System, Computer Architecture, and Networking."
+
+    },
+    {
+        "title": "Assistant Professor of Mathematics/Computer Science",
+        "location": "Landmark College",
+        "dates": "2012 - 2018",
+        "description": "Teach a wide variety of mathematics courses that would be typical for a liberal arts mathematics curriculum"
+    },
+    {
+        "title": "Instructor of Mathematics",
+        "location": "Landmark College",
+        "dates": "2011 - 2012",
+        "description": "Teach a wide variety of mathematics and computer science courses that would be typical for a liberal arts mathematics curriculum. "
+    },
+    {
+        "title": "Mathematics Teacher",
+        "location": "Pembroke Academy",
+        "dates": "2009 - 2011",
+        "description": "Public high school teacher teaching primarily freshman level courses."
+    },
+    {
+        "title": "Mathematics Teacher - Long Term Substitute",
+        "location": "Concord High School",
+        "dates": "2009 - 2009",
+        "description": "Public high school teacher teaching primarily a one year Algebra sequence."
+    },
+    {
+        "title": "Mathematics Tutor",
+        "location": "Rivier College",
+        "dates": "2007 - 2008",
+        "description": "Tutored all levels of mathematics at a 4 your college that offered a mathematics major."
+    },
+    {
+        "title": "Sailing the World",
+        "location": "M/V Stargazer",
+        "dates": "2000 - 2006",
+        "description": "Sold the house and the cars and moved aboard a 46’ Nordhavn ocean going power vessel.  Cruised up and down the east coast before crossing the Atlantic Ocean as part of the Nordhavn Atlantic Rally in 2004."
+    },
+    {
+        "title": "Computer Programmer/Analyst",
+        "location": "Various",
+        "dates": "1987 - 2000",
+        "description": "Various positions in industry as a computer programmer and analyst.  Most of my employers were insurance companies.  I have developed rating systems for property and casualty, claims systems for health, agent compensation systems for life, and patient management systems for long term care."
+    }
+]

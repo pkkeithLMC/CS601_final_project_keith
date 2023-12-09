@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- fontawesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+        <link href="../css/globals.css" rel="stylesheet">
+        <link href="../css/style.css" rel="stylesheet">
+        <link href="../css/resumeStyle.css" rel="stylesheet">
+        <script src="../js/nav-script.js" defer></script>
+        <script src="../js/resume.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+        <title>Kevin Keith</title>
+    </head>
+    <body>
+        <nav class = "nav"></nav>
+        <main>
+            <section class="resume container">
+                <div class="Resume">
+                    <h1>resume</h1>
+                </div>
+
+                <div id = "resumeApp">
+                    <div class="section" v-for="(section, index) in resumeSections" :key="index" :class = "{active: section.active}">
+                        <div class="section-header" @click="toggleSection(index)">
+                            {{ section.title}}
+                        </div>
+                        <div class="section-content" v-if="section.active" v-html="section.content">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        
+        </main>
+
+        <footer>&copy;2023.  P. Kevin Keith</footer>
+        
+        
+    </body>
+</html>

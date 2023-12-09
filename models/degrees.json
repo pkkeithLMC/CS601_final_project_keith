@@ -1,0 +1,32 @@
+[
+    {
+        "school": "Orlando College",
+        "major": "Computer Information Science",
+        "type": "BS",
+        "yearConferred": 1990
+    },
+    {
+        "school": "Rivier College",
+        "major": "Secondary Mathematics Education",
+        "type": "MAT",
+        "yearConferred": 2008
+    },
+    {
+        "school": "Plymouth State University",
+        "major": "Neurodevelopmental Approach to Teaching",
+        "type": "CAGS",
+        "yearConferred": 2012
+    },
+    {
+        "school": "Univesity of Massachusetts Amherst",
+        "major": "Math, Science, and Learning Technology",
+        "type": "Education Specialist",
+        "yearConferred": 2021
+    },
+    {
+        "school": "Boston University",
+        "major": "Software Development",
+        "type": "MS",
+        "yearConferred": 2024
+    }
+]
